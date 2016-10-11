@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.0.2 on Fri Dec  8 17:54:41 2006 by user@chewy-->
+<glade-interface>
+  <widget class="GtkWindow" id="window">
+    <property name="default_width">600</property>
+    <property name="default_height">450</property>
+    <signal name="destroy" handler="gtk_main_quit"/>
+    <child>
+      <widget class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkToolbar" id="toolbar1">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton1">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-new</property>
+                <signal name="clicked" handler="new_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton2">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-open</property>
+                <signal name="clicked" handler="open_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton3">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-save</property>
+                <signal name="clicked" handler="save_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkSeparatorToolItem" id="separatortoolitem1">
+                <property name="visible">True</property>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton4">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-cut</property>
+                <signal name="clicked" handler="cut_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton5">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-copy</property>
+                <signal name="clicked" handler="copy_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="toolbutton6">
+                <property name="visible">True</property>
+                <property name="stock_id">gtk-paste</property>
+                <signal name="clicked" handler="paste_clicked"/>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkScrolledWindow" id="scrolledwindow1">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkTextView" id="textview">
+                <property name="visible">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="hbox">
+            <property name="visible">True</property>
+            <property name="spacing">5</property>
+            <child>
+              <widget class="GtkEntry" id="entry1">
+                <property name="width_request">250</property>
+                <property name="visible">True</property>
+                <property name="text" translatable="yes">Search for ...</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="button1">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">gtk-find</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="find_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="padding">5</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

@@ -1,0 +1,11 @@
+<ui>
+  <toolbar name="Toolbar">
+    <toolitem name="FileNew" action="New"/>
+    <toolitem name="FileOpen" action="Open"/>
+    <toolitem name="FileSave" action="Save"/>
+    <separator/>
+    <toolitem name="EditCut" action="Cut"/>
+    <toolitem name="EditCopy" action="Copy"/>
+    <toolitem name="EditPaste" action="Paste"/>
+  </toolbar>
+</ui>

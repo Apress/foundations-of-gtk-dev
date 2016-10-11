@@ -1,0 +1,11 @@
+<calendar>
+  <event>
+    <name>Release of the Book</name>
+    <location>Everywhere</location>
+    <day>16</day>
+    <month>3</month>
+    <year>2007</year>
+    <start>All Day</start>
+    <end></end>
+  </event>
+</calendar>

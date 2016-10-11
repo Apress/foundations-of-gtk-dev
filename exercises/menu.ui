@@ -1,0 +1,14 @@
+<ui>
+  <menubar name="MenuBar">
+    <menu name="FileMenu" action="File">
+      <menuitem name="FileNew" action="New"/>
+      <menuitem name="FileOpen" action="Open"/>
+      <menuitem name="FileSave" action="Save"/>
+    </menu>
+    <menu name="EditMenu" action="Edit">
+      <menuitem name="EditCut" action="Cut"/>
+      <menuitem name="EditCopy" action="Copy"/>
+      <menuitem name="EditPaste" action="Paste"/>
+    </menu>
+  </menubar>
+</ui>

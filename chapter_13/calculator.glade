@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.0.2 on Mon Jan 22 16:21:15 2007 by user@chewy-->
+<glade-interface>
+  <widget class="GtkWindow" id="window">
+    <property name="width_request">250</property>
+    <property name="border_width">7</property>
+    <property name="title" translatable="yes">Calculator</property>
+    <signal name="destroy" handler="gtk_main_quit"/>
+    <child>
+      <widget class="GtkVBox" id="vbox">
+        <property name="visible">True</property>
+        <property name="spacing">7</property>
+        <child>
+          <widget class="GtkEntry" id="output">
+            <property name="visible">True</property>
+            <property name="editable">False</property>
+            <property name="has_frame">False</property>
+            <property name="xalign">1</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkTable" id="table">
+            <property name="visible">True</property>
+            <property name="n_rows">4</property>
+            <property name="n_columns">5</property>
+            <property name="column_spacing">7</property>
+            <property name="row_spacing">7</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <widget class="GtkButton" id="power">
+                <property name="visible">True</property>
+                <signal name="clicked" handler="op_clicked"/>
+                <child>
+                  <widget class="GtkLabel" id="label1">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">x&lt;sup&gt;y&lt;/sup&gt;</property>
+                    <property name="use_markup">True</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="right_attach">5</property>
+                <property name="top_attach">3</property>
+                <property name="bottom_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="squareroot">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Sqrt</property>
+                <signal name="clicked" handler="sqrt_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="right_attach">5</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="sign">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">+/-</property>
+                <signal name="clicked" handler="sign_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="right_attach">5</property>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="add">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">+</property>
+                <signal name="clicked" handler="op_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="right_attach">4</property>
+                <property name="top_attach">3</property>
+                <property name="bottom_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="sub">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">-</property>
+                <signal name="clicked" handler="op_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="right_attach">4</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="mul">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">x</property>
+                <signal name="clicked" handler="op_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="right_attach">4</property>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="equal">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">=</property>
+                <signal name="clicked" handler="equal_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="right_attach">3</property>
+                <property name="top_attach">3</property>
+                <property name="bottom_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_3">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">3</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="right_attach">3</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_6">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">6</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="right_attach">3</property>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="clear">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Clr</property>
+                <signal name="clicked" handler="clear_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="right_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="div">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">/</property>
+                <signal name="clicked" handler="op_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="right_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_9">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">9</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="right_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="decimal">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">.</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">3</property>
+                <property name="bottom_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_2">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">2</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_5">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">5</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_8">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">8</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_0">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">0</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="top_attach">3</property>
+                <property name="bottom_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_1">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">1</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_4">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">4</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+              <packing>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="num_7">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">7</property>
+                <signal name="clicked" handler="num_clicked"/>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

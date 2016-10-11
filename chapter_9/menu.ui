@@ -1,0 +1,22 @@
+<ui>
+  <menubar name="MenuBar">
+    <menu name="FileMenu" action="File">
+      <menuitem name="FileOpen" action="Open"/>
+      <menuitem name="FileSave" action="Save"/>
+      <separator/>
+      <menuitem name="FileQuit" action="Quit"/>
+    </menu>
+    <menu name="EditMenu" action="Edit">
+      <menuitem name="EditCut" action="Cut"/>
+      <menuitem name="EditCopy" action="Copy"/>
+      <menuitem name="EditPaste" action="Paste"/>
+      <separator/>
+      <menuitem name="EditSelectAll" action="SelectAll"/>
+      <menuitem name="EditDeselect" action="Deselect"/>
+    </menu>
+    <menu name="HelpMenu" action="Help">
+      <menuitem name="HelpContents" action="Contents"/>
+      <menuitem name="HelpAbout" action="About"/>
+    </menu>
+  </menubar>
+</ui>

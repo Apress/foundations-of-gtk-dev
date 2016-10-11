@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.0.2 on Fri Feb  2 20:23:14 2007 by user@chewy-->
+<glade-interface>
+  <widget class="GtkWindow" id="window">
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">Hangman</property>
+    <signal name="destroy" handler="gtk_main_quit"/>
+    <child>
+      <widget class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkDrawingArea" id="area">
+            <property name="width_request">300</property>
+            <property name="height_request">200</property>
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <widget class="GtkButton" id="buttonA">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">A</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonB">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">B</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonC">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">C</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonD">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">D</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonE">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">E</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonF">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">F</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonG">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">G</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonH">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">H</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonI">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">I</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">8</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonJ">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">J</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">9</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonK">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">K</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">10</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonL">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">L</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">11</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonM">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">M</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">12</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <widget class="GtkButton" id="buttonN">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">N</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonO">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">O</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonP">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">P</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonQ">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Q</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonR">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">R</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonS">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">S</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonT">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">T</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonU">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">U</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonV">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">V</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">8</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonW">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">W</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">9</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonX">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">X</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">10</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonY">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Y</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">11</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkButton" id="buttonZ">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Z</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <signal name="clicked" handler="on_letter_clicked"/>
+              </widget>
+              <packing>
+                <property name="position">12</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

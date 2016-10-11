@@ -1,0 +1,10 @@
+<ui>
+  <popup name="EntryPopup">
+    <menuitem name="EditCut" action="Cut"/>
+    <menuitem name="EditCopy" action="Copy"/>
+    <menuitem name="EditPaste" action="Paste"/>
+    <separator/>
+    <menuitem name="EditSelectAll" action="SelectAll"/>
+    <menuitem name="EditDeselect" action="Deselect"/>
+  </popup>
+</ui>

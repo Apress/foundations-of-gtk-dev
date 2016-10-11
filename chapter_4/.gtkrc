@@ -1,0 +1,37 @@
+style "widgets"
+{
+  xthickness = 2
+  ythickness = 2
+  
+  fg[ACTIVE] = "#FFFFFF"
+  fg[SELECTED] = "#003366"
+  fg[NORMAL] = "#CCCCCC"
+  fg[PRELIGHT] = "#FFFFFF"
+  fg[INSENSITIVE] = "#999999"
+  
+  bg[ACTIVE] = "#003366"
+  bg[SELECTED] = "#FFFFFF"
+  bg[NORMAL] = "#666666"
+  bg[PRELIGHT] = "#003366"
+  bg[INSENSITIVE] = "#666666"
+}
+
+style "labels" = "widgets"
+{
+  font_name = "Sans Bold 14"
+}
+
+style "buttons" = "widgets"
+{
+  GtkButton::inner-border = { 10, 10, 10, 10 }
+}
+
+style "checks" = "buttons"
+{
+  GtkCheckButton::indicator-size = 25
+}
+
+class "GtkWindow" style "widgets"
+class "GtkLabel" style "labels"
+class "GtkCheckButton" style "checks"
+class "Gtk*Button" style "buttons"
